@@ -6,6 +6,6 @@
 
 ```
 
-# NICAR 2018 Session
+# NICAR 2018 Leaflet.js Session
 
 The code behind the NICAR 2018 session on making maps with `Leaflet.js`

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset=utf-8 />
+    <title>A Leaflet map!</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+
+    <!-- include scripts and css here -->
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
+
+</head>
+<body>
+
+
+    <!-- STYLES -->
+    <style>
+        #map {
+            width: 960px;
+            height:500px;
+        }
+    </style>
+
+    <!-- HTML here -->
+    <div id="map"></div>
+
+
+
+    <!-- JavaScript here -->
+     <script>
+
+        var map = L.map('map');
+
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>contributors'
+         }).addTo(map);
+
+        map.setView([25.7617, -80.1918], 6);
+
+        var myIcon = L.icon({
+         iconUrl: 'https://cldup.com/jsXu-OReqo-3000x3000.png',
+         iconSize: [50,50],
+         iconAnchor: [24,50],
+         popupAnchor: [1,-50]
+        });
+
+        var myMarker = L.marker([25.7617, -80.1918], {
+            icon: myIcon
+        }).addTo(map);
+
+        myMarker.bindPopup("Hi. I'm a popup. <br> Customize me.");
+
+    </script>
+
+
+
+
+
+</body>
+<html>

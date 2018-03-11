@@ -1,0 +1,462 @@
+var places =[
+  {
+    "Location": "100 N. Green St. Chicago",
+    "Lat": "41.8831442",
+    "Lng": "-87.6485828"
+  },
+  {
+    "Location": "11300 S. Racine Ave. Chicago",
+    "Lat": "41.6881679",
+    "Lng": "-87.6519752"
+  },
+  {
+    "Location": "2100 E. 68th St. Chicago",
+    "Lat": "41.7716364",
+    "Lng": "-87.57398429999999"
+  },
+  {
+    "Location": "9200 S. Dobson Ave. Chicago",
+    "Lat": "41.7274904",
+    "Lng": "-87.5988201"
+  },
+  {
+    "Location": "5900 S. Springfield Ave. Chicago",
+    "Lat": "41.78595809999999",
+    "Lng": "-87.7205024"
+  },
+  {
+    "Location": "5000 S. Wabash Ave. Chicago",
+    "Lat": "41.8037006",
+    "Lng": "-87.6243145"
+  },
+  {
+    "Location": "8900 S. Halsted St. Chicago",
+    "Lat": "41.7324241",
+    "Lng": "-87.64386309999999"
+  },
+  {
+    "Location": "6500 S. Western Ave. Chicago",
+    "Lat": "41.77547269999999",
+    "Lng": "-87.6840577"
+  },
+  {
+    "Location": "6200 S. Sacramento Ave. Chicago",
+    "Lat": "41.780752",
+    "Lng": "-87.6986127"
+  },
+  {
+    "Location": "4600 S. Drake Ave. Chicago",
+    "Lat": "41.8097208",
+    "Lng": "-87.7124319"
+  },
+  {
+    "Location": "3700 W. Lexington St. Chicago",
+    "Lat": "41.871989",
+    "Lng": "-87.71818999999999"
+  },
+  {
+    "Location": "0 W. 15th St. Chicago",
+    "Lat": "41.861961",
+    "Lng": "-87.6272051"
+  },
+  {
+    "Location": "1100 W. 122nd St. Chicago",
+    "Lat": "41.6722411",
+    "Lng": "-87.64904500000002"
+  },
+  {
+    "Location": "2000 W. 70th Pl. Chicago",
+    "Lat": "41.7658986",
+    "Lng": "-87.6737163"
+  },
+  {
+    "Location": "1600 S. Loomis St. Chicago",
+    "Lat": "41.8595619",
+    "Lng": "-87.661659"
+  },
+  {
+    "Location": "8100 S. Houston Ave. Chicago",
+    "Lat": "41.7481361",
+    "Lng": "-87.5506139"
+  },
+  {
+    "Location": "6800 S. Indiana Ave. Chicago",
+    "Lat": "41.77088699999999",
+    "Lng": "-87.62069199999999"
+  },
+  {
+    "Location": "12200 S. State St. Chicago",
+    "Lat": "41.6723739",
+    "Lng": "-87.62278359999999"
+  },
+  {
+    "Location": "1400 W. Lake St. Chicago",
+    "Lat": "41.8854211",
+    "Lng": "-87.6624226"
+  },
+  {
+    "Location": "8100 S. Eberhart Ave. Chicago",
+    "Lat": "41.747332",
+    "Lng": "-87.612737"
+  },
+  {
+    "Location": "3900 W. Argyle St. Chicago",
+    "Lat": "41.9719254",
+    "Lng": "-87.7256877"
+  },
+  {
+    "Location": "8100 S. Drexel Ave. Chicago",
+    "Lat": "41.7474663",
+    "Lng": "-87.6029927"
+  },
+  {
+    "Location": "10300 S. Doty Ave. Chicago",
+    "Lat": "41.7044335",
+    "Lng": "-87.58761469999999"
+  },
+  {
+    "Location": "6200 S. Laflin St. Chicago",
+    "Lat": "41.7811656",
+    "Lng": "-87.6620947"
+  },
+  {
+    "Location": "7200 S. Racine Ave. Chicago",
+    "Lat": "41.763102",
+    "Lng": "-87.65439490000001"
+  },
+  {
+    "Location": "5900 S. Campbell Ave. Chicago",
+    "Lat": "41.7864919",
+    "Lng": "-87.6862752"
+  },
+  {
+    "Location": "5200 W. Lake St. Chicago",
+    "Lat": "41.8872275",
+    "Lng": "-87.75634529999999"
+  },
+  {
+    "Location": "2400 W. Adams St. Chicago",
+    "Lat": "41.8786054",
+    "Lng": "-87.68640719999999"
+  },
+  {
+    "Location": "7500 S. Wabash Ave. Chicago",
+    "Lat": "41.75823159999999",
+    "Lng": "-87.6231488"
+  },
+  {
+    "Location": "1900 S. Loomis St. Chicago",
+    "Lat": "41.855928",
+    "Lng": "-87.661591"
+  },
+  {
+    "Location": "1500 S. Avers Ave. Chicago",
+    "Lat": "41.860602",
+    "Lng": "-87.7217019"
+  },
+  {
+    "Location": "7800 S. Western Ave. Chicago",
+    "Lat": "41.7515141",
+    "Lng": "-87.6828845"
+  },
+  {
+    "Location": "2900 W. 63rd St. Chicago",
+    "Lat": "41.7794552",
+    "Lng": "-87.69618849999999"
+  },
+  {
+    "Location": "7200 S. Calumet Ave. Chicago",
+    "Lat": "41.7638314",
+    "Lng": "-87.6168354"
+  },
+  {
+    "Location": "1500 W. 58th St. Chicago",
+    "Lat": "41.78858839999999",
+    "Lng": "-87.6620198"
+  },
+  {
+    "Location": "2500 W. 42nd St. Chicago",
+    "Lat": "41.8174783",
+    "Lng": "-87.6871705"
+  },
+  {
+    "Location": "8700 S. Exchange Ave. Chicago",
+    "Lat": "41.737202",
+    "Lng": "-87.55320999999999"
+  },
+  {
+    "Location": "1300 S. Loomis St. Chicago",
+    "Lat": "41.8651364",
+    "Lng": "-87.6615041"
+  },
+  {
+    "Location": "7000 S. Wolcott Ave. Chicago",
+    "Lat": "41.766519",
+    "Lng": "-87.6714889"
+  },
+  {
+    "Location": "800 N. Laramie Ave. Chicago",
+    "Lat": "41.895197",
+    "Lng": "-87.75559899999999"
+  },
+  {
+    "Location": "100 N. Central Ave. Chicago",
+    "Lat": "41.8822519",
+    "Lng": "-87.76509779999999"
+  },
+  {
+    "Location": "5600 S. Laflin St. Chicago",
+    "Lat": "41.792077",
+    "Lng": "-87.662441"
+  },
+  {
+    "Location": "2600 W. 25th St. Chicago",
+    "Lat": "41.846697",
+    "Lng": "-87.6905657"
+  },
+  {
+    "Location": "10500 S. Normal Ave. Chicago",
+    "Lat": "41.7032183",
+    "Lng": "-87.63578740000001"
+  },
+  {
+    "Location": "5500 W. Monroe St. Chicago",
+    "Lat": "41.879557",
+    "Lng": "-87.762002"
+  },
+  {
+    "Location": "3200 E. 92nd St. Chicago",
+    "Lat": "41.7285982",
+    "Lng": "-87.5466548"
+  },
+  {
+    "Location": "3100 N. Newcastle Ave. Chicago",
+    "Lat": "41.9364645",
+    "Lng": "-87.79714"
+  },
+  {
+    "Location": "500 N. Central Ave. Chicago",
+    "Lat": "41.8892834",
+    "Lng": "-87.7651655"
+  },
+  {
+    "Location": "11600 S. Church St. Chicago",
+    "Lat": "41.6829143",
+    "Lng": "-87.6700575"
+  },
+  {
+    "Location": "4900 N. Ridgeway Ave. Chicago",
+    "Lat": "41.970277",
+    "Lng": "-87.72212329999999"
+  },
+  {
+    "Location": "3200 W. Walnut St. Chicago",
+    "Lat": "41.885646",
+    "Lng": "-87.70644399999999"
+  },
+  {
+    "Location": "1100 W. 110th Pl. Chicago",
+    "Lat": "41.693404",
+    "Lng": "-87.64979"
+  },
+  {
+    "Location": "5000 W. LeMoyne St. Chicago",
+    "Lat": "41.9077335",
+    "Lng": "-87.7509822"
+  },
+  {
+    "Location": "12200 S. Harvard Ave. Chicago",
+    "Lat": "41.6722745",
+    "Lng": "-87.6311896"
+  },
+  {
+    "Location": "1500 E. 65th Pl. Chicago",
+    "Lat": "41.7760417",
+    "Lng": "-87.5888204"
+  },
+  {
+    "Location": "1800 S. Millard Ave. Chicago",
+    "Lat": "41.8569983",
+    "Lng": "-87.716364"
+  },
+  {
+    "Location": "1700 N. Karlov Ave. Chicago",
+    "Lat": "41.91179899999999",
+    "Lng": "-87.729174"
+  },
+  {
+    "Location": "3200 S. Lawndale Ave. Chicago",
+    "Lat": "41.8350505",
+    "Lng": "-87.7174733"
+  },
+  {
+    "Location": "900 E. 84th St. Chicago",
+    "Lat": "41.7421412",
+    "Lng": "-87.6025342"
+  },
+  {
+    "Location": "9100 S. Loomis St. Chicago",
+    "Lat": "41.7284505",
+    "Lng": "-87.65824789999999"
+  },
+  {
+    "Location": "4100 W. Taylor St. Chicago",
+    "Lat": "41.8690564",
+    "Lng": "-87.7277558"
+  },
+  {
+    "Location": "10700 S. Eggleston Ave. Chicago",
+    "Lat": "41.6997088",
+    "Lng": "-87.6341672"
+  },
+  {
+    "Location": "6800 S. Peoria St. Chicago",
+    "Lat": "41.7705484",
+    "Lng": "-87.64723649999999"
+  },
+  {
+    "Location": "6100 S. Cottage Grove Ave. Chicago",
+    "Lat": "41.7838921",
+    "Lng": "-87.606385"
+  },
+  {
+    "Location": "1400 N. Mason Ave. Chicago",
+    "Lat": "41.9057743",
+    "Lng": "-87.77462299999999"
+  },
+  {
+    "Location": "5400 W. Division St. Chicago",
+    "Lat": "41.902459",
+    "Lng": "-87.76115899999999"
+  },
+  {
+    "Location": "6400 S. Ingleside Ave. Chicago",
+    "Lat": "41.7785213",
+    "Lng": "-87.60196669999999"
+  },
+  {
+    "Location": "7100 S. Marshfield Ave. Chicago",
+    "Lat": "41.7647161",
+    "Lng": "-87.66517739999999"
+  },
+  {
+    "Location": "6200 S. Campbell Ave. Chicago",
+    "Lat": "41.7808953",
+    "Lng": "-87.68636839999999"
+  },
+  {
+    "Location": "600 N. Ridgeway Ave. Chicago",
+    "Lat": "41.8918801",
+    "Lng": "-87.7201285"
+  },
+  {
+    "Location": "7700 S. Carpenter St. Chicago",
+    "Lat": "41.7540627",
+    "Lng": "-87.6505021"
+  },
+  {
+    "Location": "0 W. 68th St. Chicago",
+    "Lat": "41.7709146",
+    "Lng": "-87.6267273"
+  },
+  {
+    "Location": "9300 S. Greenwood Ave. Chicago",
+    "Lat": "41.7258171",
+    "Lng": "-87.597297"
+  },
+  {
+    "Location": "2600 W. 24th Place Chicago",
+    "Lat": "41.8479003",
+    "Lng": "-87.6906042"
+  },
+  {
+    "Location": "4300 W. Thomas St. Chicago",
+    "Lat": "41.900991",
+    "Lng": "-87.73382800000002"
+  },
+  {
+    "Location": "1600 W. 119th St. Chicago",
+    "Lat": "41.6775414",
+    "Lng": "-87.6613479"
+  },
+  {
+    "Location": "4400 W. Lexington St. Chicago",
+    "Lat": "41.8715639",
+    "Lng": "-87.73516719999999"
+  },
+  {
+    "Location": "1700 W. 50th St. Chicago",
+    "Lat": "41.8031096",
+    "Lng": "-87.6672772"
+  },
+  {
+    "Location": "1300 S. Throop St. Chicago",
+    "Lat": "41.8344877",
+    "Lng": "-87.6584791"
+  },
+  {
+    "Location": "3300 W. Madison St. Chicago",
+    "Lat": "41.8812317",
+    "Lng": "-87.70878499999999"
+  },
+  {
+    "Location": "7900 S. King Dr. Chicago",
+    "Lat": "41.7509337",
+    "Lng": "-87.6154561"
+  },
+  {
+    "Location": "7100 S. Vincennes Ave. Chicago",
+    "Lat": "41.7651337",
+    "Lng": "-87.6281226"
+  },
+  {
+    "Location": "500 W. 85th St. Chicago",
+    "Lat": "41.7396213",
+    "Lng": "-87.6376437"
+  },
+  {
+    "Location": "1000 N. Mason Ave. Chicago",
+    "Lat": "41.8983781",
+    "Lng": "-87.77403269999999"
+  },
+  {
+    "Location": "3300 W. Division St. Chicago",
+    "Lat": "41.903081",
+    "Lng": "-87.709451"
+  },
+  {
+    "Location": "6300 S. Ellis Ave. Chicago",
+    "Lat": "41.7804253",
+    "Lng": "-87.60047600000001"
+  },
+  {
+    "Location": "9100 S. Stony Island Ave. Chicago",
+    "Lat": "41.72925360000001",
+    "Lng": "-87.5858971"
+  },
+  {
+    "Location": "10700 S. Hoxie Ave Chicago",
+    "Lat": "41.7008468",
+    "Lng": "-87.5610025"
+  },
+  {
+    "Location": "7000 S. Sangamon St. Chicago",
+    "Lat": "41.7667463",
+    "Lng": "-87.6484787"
+  },
+  {
+    "Location": "4400 W. Walton St. Chicago",
+    "Lat": "41.8979224",
+    "Lng": "-87.73601389999999"
+  },
+  {
+    "Location": "1000 N. Monticello Ave. Chicago",
+    "Lat": "41.8992001",
+    "Lng": "-87.7178966"
+  },
+  {
+    "Location": "7800 S. King Dr. Chicago",
+    "Lat": "41.7527949",
+    "Lng": "-87.6152632"
+  }
+]
